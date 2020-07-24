@@ -74,7 +74,9 @@ a{
     text-decoration: none;
 }
 /**************************Header***********************/
-header{
+.header{
+    display: block;
+    width: 100%;
     background-color: #90caf9;
     height:80px;
 }
@@ -109,7 +111,7 @@ header{
     padding:7px 13px;
     border-radius: 5px;
 }
-.navigation li a.active,.navigation li a:hover{
+.navigation li.active a,.navigation li a:hover{
     background: #64b5f6;
 }
 .navigation li a:hover{
