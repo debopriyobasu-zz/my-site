@@ -48,11 +48,17 @@ body,html{
 .w-100{
     width: 100%;
 }
+.w-50{
+    width: 50%;
+}
 .h-100{
     height: 100%;
 }
 .m-auto{
     margin: 0 auto;
+}
+.m-t-20{
+    margin-top:20%;
 }
 .p-l-r-15{
     padding-left: 15px;
@@ -79,6 +85,7 @@ a{
     width: 100%;
     background-color: #90caf9;
     height:80px;
+    z-index:10;
 }
 
 .headerContainer{
@@ -112,7 +119,7 @@ a{
     border-radius: 5px;
 }
 .navigation li.active a,.navigation li a:hover{
-    background: #64b5f6;
+    background: #5d99c6;
 }
 .navigation li a:hover{
     transition: 0.5s;
@@ -120,6 +127,8 @@ a{
 .navigation li:last-child{
     padding-right: 0px;
 }
+
+
 .navIcon{ color: #fff;font-size:30px;height:100%;line-height:80px;cursor: pointer;}
 /***********************Body**********************************/
 .fab{
@@ -139,6 +148,33 @@ a{
     transform: translate(-50%, -50%);
     
 }
+.contentContainer1{
+    max-width:1000px;
+    display: block;
+    margin:0 auto;
+}
+.leftContentContainer1{
+    width:50%;
+    float:left;
+}
+.rightContentContainer1{
+    width:50%;
+    float:right;
+}
+.rightContentContainer1 imageContainer{
+    width: 100%;
+    height: auto;
+}
+.imageContainer img{
+    width:100%;
+    height:100%;
+}
+.textContentContainer1,.imageContainer{
+    margin:0 15px;
+}
+.textContentContainer1{
+    padding-top:20%;
+}
 /************************Mobile View*************************/
 @media only screen and (max-width:768px){
     .onlyDesktop{
@@ -146,5 +182,37 @@ a{
     }
     .onlyMobile{
         display: block;
+    }
+    .leftContentContainer1,.rightContentContainer1{
+        width:100%;
+        margin:0 auto;
+        float:none;
+        text-align: center;
+        font-size:80%;
+    }
+    .textContentContainer1{
+        padding-top:0%;
+    }
+    .headerLinks{
+        background-color: #90caf9;
+        display: block;
+        padding:0px;
+        margin:0px;
+        display: none;
+    }
+    .mobNavigation{
+        padding:0px;
+        margin:0px;
+    }
+    .mobNavigation li{
+        text-align: center;
+        font-size: large;
+        padding:15px;
+    }
+    .mobNavigation li a{
+        color:#fff;
+    }
+    .mobNavigation li.active, .mobNavigation li:hover{
+        background-color:#5d99c6 ;
     }
 }

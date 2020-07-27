@@ -13,7 +13,7 @@
         <div class="headerContainer h-100 d-block m-auto w-100 p-l-r-15">
             <img src="images/icon.png" alt="logo" class="logoImg float-l">
             <div class="logo-container h-100 d-table float-l">    
-                <div class="logo h-100 d-table-cell">MY<span>SITE</span></div>
+                <div class="logo h-100 d-table-cell">VACCI<span>NATION</span></div>
             </div>
             <ul class="navigation h-100 d-table float-r onlyDesktop">
                 <li class="home"><a href="index.html">Home</a></li>
@@ -26,9 +26,19 @@
             </div>            
         </div>
     </header>
+    <div class="headerLinks onlyMobile">
+        <ul class="mobNavigation onlyMobile">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html" >About</a></li>
+            <li class=""><a href="news.html" >News</a></li>
+            <li class=""><a href="contact.html" >Contact</a></li>
+        </ul>
+    </div>
     <div class="contentContainer">
+        <h3>About content coming soon</h3>
         <div class="fab onlyMobile">
             <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+            
         </div>
     </div>
     <footer>
@@ -36,5 +46,15 @@
 
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.navIcon').click(function(){
+            if($('.headerLinks').hasClass('open')){
+                $('.headerLinks').removeClass('open').toggle().slideUp(300);
+            }else{
+              $('.headerLinks').addClass('open').toggle().slideDown(300);  
+            }       
+        })
+    </script>
 </body>
 </html>
